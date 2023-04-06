@@ -1,4 +1,4 @@
-<h3>Python script</h3>
+<h3>Python scripts</h3>
 <br />
 <br />
 <br />NTC thermistor Calculation Script.py
