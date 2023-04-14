@@ -5,3 +5,6 @@
 <br />
 <br />SineWave Lockup Table Generator script V1.py
 <br />This script generate a sine wave lock up table, put the values in a uint16 C array. Option are ampitude, size and how many number per row.
+<br />
+<br />LED Voltage Drop Calculator.py
+<br />Calculate the voltage drop of LEDs, single or in series, will calculate resistor, power disipation in led and resistor, etc
