@@ -49,6 +49,11 @@ class ONE_INSTRUCTION_CPU:
             self.RAM[i * 3 + 1] = instruction[1]
             self.RAM[i * 3 + 2] = instruction[2]
             
+    def reset_cpu(self):
+        self.registers = [0] * 8 	
+        self.RAM = [0] * 256
+        self.pc = 0 
+        
 # Great new CPU instance            
 cpu = ONE_INSTRUCTION_CPU()
 
