@@ -13,27 +13,27 @@ With ADD you can also load data into the registers, example {2, 0, 42} that will
 <p>MOV dest, src copies the value in register src to register dest.</p>
 
 <h3>1: NAND</h3>
-<p>NAND dest, src1, src2 computes the NAND of the values in registers src1 and src2, and stores the result in register dest. 
+<p>NAND (dest, src1, src2) computes the NAND of the values in registers src1 and src2, and stores the result in register dest. 
 The NAND of two bits x and y is defined as NOT(x AND y).</p>
 
 <h3>2: ADD</h3>
-<p>ADD dest, src1, src2 adds the value in register src1 to the value in register src2, and stores the result in register dest. 
+<p>ADD (dest, src1, src2) adds the value in register src1 to the value in oprand src2, and stores the result in register dest. 
 If the result is too large to fit in a 32-bit signed integer, it overflows and wraps around to the smallest representable value.</p>
 
 <h3>3: SUB</h3>
-<p>SUB dest, src1, src2 subtracts the value in register src2 from the value in register src1, and stores the result in register dest. 
+<p>SUB dest, src1, src2 subtracts the value in oprand src2 from the value in register src1, and stores the result in register dest. 
 If the result is too small to fit in a 32-bit signed integer, it underflows and wraps around to the largest representable value.</p>
 
 <h3>4: MUL</h3>
-<p>MUL dest, src1, src2 multiplies the value in register src1 by the value in register src2, and stores the result in register dest. 
+<p>MUL dest, src1, src2 multiplies the value in register src1 by the value in oprand src2, and stores the result in register dest. 
 If the result is too large to fit in a 32-bit signed integer, it overflows and wraps around to the smallest representable value.</p>
 
 <h3>5: DIV</h3>
-<p>DIV dest, src1, src2 divides the value in register src1 by the value in register src2, rounding down to the nearest integer, and stores the result in register dest. 
+<p>DIV dest, src1, src2 divides the value in register src1 by the value in oprand src2, rounding down to the nearest integer, and stores the result in register dest. 
 If src2 is zero, the behavior is undefined.</p>
 
 <h3>6: MOD</h3>
-<p>MOD dest, src1, src2 computes the remainder of dividing the value in register src1 by the value in register src2, and stores the result in register dest. 
+<p>MOD dest, src1, src2 computes the remainder of dividing the value in register src1 by the value in oprand src2, and stores the result in register dest. 
 If src2 is zero, the behavior is undefined.</p>
 
 <h3>7: HLT</h3>
