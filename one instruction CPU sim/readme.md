@@ -6,7 +6,7 @@
 <h3>Instructions</h3>
 <p>The NANDCPU supports 8 instructions, each identified by an opcode between 0 and 7. Each instruction takes two operands. <br>
 {opcode, oprand1, oprand2}  <br>
-{opcode, dest reg, oprand1}  <br>
+{opcode, dest reg, oprand2}  <br>
 With ADD you can also load data into the registers, example {2, 0, 42} that will put 42 into R2, 0 + 42 = 42 and results will be stored in R0.</p>
 
 <h3>0: MOV</h3>
