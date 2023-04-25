@@ -72,4 +72,4 @@ cpu.run()
 
 # Show the results that came back from the cpu
 print(cpu.registers)
-# With the example program the output sould be [0, -1, 0, 0, 5, 0, 0, 0]
+# With the example program the output sould be [0, 0, -1, 0, 5, 0, -7, 0]
