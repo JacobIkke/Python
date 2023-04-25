@@ -1,4 +1,4 @@
-<h1>A Simple One Insctruction CPU</h1>
+<h1>A Simple One Instruction CPU</h1>
 
 <h3>Registers</h3>
 <p>The One Instruction CPU has 8 registers, numbered from 0 to 7. Each register is a 32-bit signed integer, capable of holding values between -2147483648 and 2147483647.</p>
