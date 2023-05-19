@@ -1,5 +1,5 @@
 # Simple one instruction CPU simulator
-# I use NAND, NAND is an universal gate, that means you can make any other logic gate with the NAND gate.
+# I choose NAND as the one instruction, NAND is an universal gate, that means you can make any other logic gate with the NAND gate.
 # Please read the  manual how to use the instructions, and be free to add more instruction. 
 # The CPU runs a programs for the RAM, load the program first into RAM before it execute the program. 
 
