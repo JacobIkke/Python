@@ -11,3 +11,6 @@
 <br />
 <br />serial_monitor_v02.py
 <br />Simple serial monitor application using the Tkinter library in Python. 
+<br />
+<br />one instruction CPU sim.py
+<br />Introducing the One-Instruction CPU Simulator—a remarkable innovation that can accomplish everything a normal CPU can with just a single instruction: NAND. Despite its seemingly limited instruction set, this simulator defies expectations by leveraging the NAND gate to perform a wide range of tasks, replicating the functionality of CPUs with tens or even thousands of instructions.
