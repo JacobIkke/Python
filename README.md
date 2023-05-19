@@ -1,5 +1,5 @@
 <h3>Python scripts</h3>
-<p>I frequently created Python scripts for my electronic projects, but I would often loss or delete them after a while. Therefore, I realized it would be better to put  them here for anyone to use, and to prevent any further losses. 😋 </p>
+<p>I frequently created Python scripts for my electronic projects, but unfortunately, I often found misplace or accidentally delete these scripts after some time had passed. Therefore, I realized it would be better to put  them here for anyone to use, and to prevent any further losses. 😋 </p>
 <br />NTC thermistor Calculation Script.py
 <br />Simple tool to calculate/simulate NTC thermistor and ADC calculations
 <br />
