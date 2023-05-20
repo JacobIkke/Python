@@ -9,7 +9,7 @@
 <br />LED Voltage Drop Calculator.py
 <br />Calculate the voltage drop of LEDs, single or in series, will calculate resistor, power disipation in led and resistor, etc
 <br />
-<br />serial_monitor_v02.py
+<br />serial_monitor_v03.py
 <br />Simple serial monitor application using the Tkinter library in Python. 
 <br />
 <br />one instruction CPU sim
