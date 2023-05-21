@@ -45,7 +45,7 @@ def read_serial():
         textbox.insert(tk.END, f"Error reading from serial port: {str(e)}\n")
     after_id = textbox.after(100, read_serial)  # Schedule the next read after 100ms
     
-def handle_button_click():
+def send_serial():
     # Function to handle button click event
     input_text = input_entry.get()  # Get the text entered in the Entry widget
     print("Entered text:", input_text) # Sehll output
@@ -113,7 +113,7 @@ input_entry = tk.Entry(input_frame, width=60)  # Adjust the width as needed
 input_entry.pack(side=tk.LEFT)
 
 # Buttons input_frame
-send_button = tk.Button(input_frame, text="Send", command=handle_button_click, width=7, height=1)
+send_button = tk.Button(input_frame, text="Send", command=send_serial, width=7, height=1)
 send_button.pack(side=tk.LEFT, padx=5, pady=5)
 
 window.mainloop()
