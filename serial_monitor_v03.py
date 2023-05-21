@@ -80,15 +80,13 @@ port_dropdown = tk.OptionMenu(top_frame, port_var, *available_ports)
 port_dropdown.pack(side=tk.LEFT)
 
 # Baud rate selection
-baud_rate_frame = top_frame #tk.Frame(window)
-baud_rate_frame.pack(padx=5, pady=5)
-
-baud_rate_label = tk.Label(baud_rate_frame, text="Baud Rate:")
+top_frame.pack(padx=5, pady=5)
+baud_rate_label = tk.Label(top_frame, text="Baud Rate:")
 baud_rate_label.pack(side=tk.LEFT)
 
 baud_rate_var = tk.StringVar(window)
 baud_rate_var.set("115200")
-baud_rate_dropdown = tk.OptionMenu(baud_rate_frame, baud_rate_var, "300", "600", "1200", "2400", "4800", "9600", "19200", "38400", "115200", "230400", "500000", "1000000")
+baud_rate_dropdown = tk.OptionMenu(top_frame, baud_rate_var, "300", "600", "1200", "2400", "4800", "9600", "19200", "38400", "115200", "230400", "500000", "1000000")
 baud_rate_dropdown.pack(side=tk.LEFT)
 
 # Buttons top_frame, Connect button
