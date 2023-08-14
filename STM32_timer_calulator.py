@@ -7,8 +7,8 @@ def calculate_timer_frequency(clock_frequency, prescaler, autoreload):
     return timer_frequency
 
 # Replace these values with your actual values
-clock_frequency = 72000000  	# Replace with your clock frequency in Hz
-prescaler = 1            		# Replace with your prescaler value
+clock_frequency = 72000000  	    # Replace with your clock frequency in Hz
+prescaler = 1            		    # Replace with your prescaler value
 autoreload = 65535            		# Replace with your autoreload value 
 
 # Calculate the timer frequency using the function
