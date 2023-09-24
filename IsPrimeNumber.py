@@ -13,7 +13,7 @@
 import math
 import time
 
-machine.freq(270000000)
+machine.freq(125000000)
 print("CPU Speed: ", int(machine.freq() / 1000000), "MHz \n")
 
 def find_primes(max_primes):
