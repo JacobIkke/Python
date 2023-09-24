@@ -2,13 +2,19 @@
 # Simple prime number benchmark.
 #
 # Some test scores:
-# Pico Python 125M = 36s
-# Pico Python 256M = 18s
-# Pico C sdk 125M  = 996 ms
-# Pico C sdk 256M  = 486 ms
-# Arduino 16M = 120s
-# STM32F103 72M = 3s
-# STM32H750 480M = 186 ms
+# Pico Python 125Mhz = 36s (Thonny)
+# Pico Python 256Mhz = 18s (Thonny)
+#
+# Other platforms/languages test scores:
+# Pico C sdk 125Mhz  = 996 ms (vscode)
+# Pico C sdk 256Mhz  = 486 ms (vscode)
+# Arduino 16Mhz = 120s (Arduino software)
+# LGT8F328p 32Mhz 59s (Arduino software)
+# STM32F103 72Mhz = 3s (Arduino software, I didn't run this myself!)
+# STM32H750 480Mhz = 186 ms (stm32cube)
+#
+# P.S.
+# I keep the code simular across platforms and languages as much as possible. 
 
 import math
 import time
