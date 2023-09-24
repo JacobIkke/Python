@@ -4,7 +4,7 @@
 # Some test scores:
 # Pico Python 125M = 36s
 # Pico Python 256M = 18s
-# Pico #C sdk 125M  = 996 ms
+# Pico C sdk 125M  = 996 ms
 # Pico C sdk 256M  = 486 ms
 # Arduino 16M = 120s
 # STM32F103 72M = 3s
