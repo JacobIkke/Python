@@ -12,22 +12,26 @@
 # LGT8F328p 32Mhz 59s (Arduino software)
 # STM32F103 72Mhz = 3s (Arduino software, I didn't run this myself!)
 # STM32H750 480Mhz = 186 ms (stm32cube)
+# CH582F RISCV 60MHz code in flash = 15724ms (Mounriver IDE, RISCV GCC)
 #
 # P.S.
-# I keep the code simular across platforms and languages as much as possible. 
+# I aim to keep the code similar across platforms and languages whenever possible.
 
 import math
 import time
 
-machine.freq(125000000)
-print("CPU Speed: ", int(machine.freq() / 1000000), "MHz \n")
+#machine.freq(125000000)
+#print("CPU Speed: ", int(machine.freq() / 1000000), "MHz \n")
+
+print("IsPrimeNumber Python Benchmark v1.0")
+#print("Help time: ", help(time))
 
 def find_primes(max_primes):
     i = 2
     found = 0
     last_prime = 0
     last_found = 0
-    start = time.time()
+    start = time.time_ns()
 
     while True:
         prime = is_prime(i)
@@ -39,21 +43,22 @@ def find_primes(max_primes):
             #if found % 10 == 0:
                 #print(f"{found}: ", end='')
 
-        elapsed_seconds = int(time.time() - start)
+        elapsed_seconds = int(time.time_ns() - start)
 
         if found >= max_primes:
-            print("\nFound", found, "primes in", elapsed_seconds, "seconds")
+            print("\nFound", found, "primes in", int(elapsed_seconds / 1000000), "ms")
             print("Highest prime found was:", last_prime, "\n")
-            time.sleep(10)
+            time.sleep(5)
 
             i = 2
             found = 0
             last_prime = 0
             print("Prime calculation starting (again)")
-            start = time.time()
+            start = time.time_ns()
         else:
             i += 1
             
+      
 def is_prime(num):
     if num <= 1:
         return False
@@ -69,6 +74,6 @@ def is_prime(num):
     return True
 
 
-# Usage example:
+# Run the benchmark:
 max_primes_to_find = 10000
 find_primes(max_primes_to_find)
