@@ -1,7 +1,7 @@
 # This is micro python port of code form Youtuber Ralph S Bacon, give his channel some love!  
 # Simple prime number benchmark.
 #
-# Some test scores:
+# Some Pico test scores:
 # Pico Python 125Mhz = 36s (Thonny)
 # Pico Python 256Mhz = 18s (Thonny)
 #
@@ -10,9 +10,13 @@
 # Pico C sdk 256Mhz  = 486 ms (vscode)
 # Arduino 16Mhz = 120s (Arduino software)
 # LGT8F328p 32Mhz 59s (Arduino software)
-# STM32F103 72Mhz = 3s (Arduino software, I didn't run this myself!)
-# STM32H750 480Mhz = 186 ms (stm32cube)
+# STM32F103 72Mhz code in flash = 3s (Arduino software, I didn't run this myself!)
+# STM32H750 480Mhz code in flash = 186 ms (stm32cube GCC, both L1 caches enabled)
 # CH582F RISCV 60MHz code in flash = 15724ms (Mounriver IDE, RISCV GCC)
+# CH582f RISCV 60MHz code in RAM = 3433ms (Mounriver IDE, RISCV GCC)
+# AIR32F103CBT6 72MHz Code in flash = 2455ms (VScode GCC) 
+# AIR32F103CBT6 216MHz Code in flash = 818ms (VScode GCC) Default clock
+# AIR32F103CBT6 256MHz Code in flash = 690ms (VScode GCC) Max Clock
 #
 # P.S.
 # I aim to keep the code similar across platforms and languages whenever possible.
