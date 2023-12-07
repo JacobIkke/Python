@@ -30,7 +30,7 @@ print(f"The gain of {dB} db = {result_gain}")
 
 # 3. Vin and Vout to db
 def calculate_decibel(Vin, Vout):
-    # Check if V1 or V2 is non-positive
+    # Check if Vin or Vout is non-positive
     if Vin <= 0 or Vout <= 0:
         raise ValueError("Voltage values must be positive.")
 
