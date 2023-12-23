@@ -13,8 +13,8 @@
 
 # The Timer Inputs, adjust those values based on your requirements.
 timer_clock_frequency = 170000000  # Timer clock in hz, in most cases; timers are coupled to APB1, APB2, etc.
-timer_prescaler = 65535 # Max: 16-bit for 16bit timers, and 32bit for 32bit timers. 
-timer_period = 65535 # Max: 16-bit for 16bit timers, and 32bit for 32bit timers. 
+timer_prescaler = 65535 # Max: 65535 for 16bit timers, and 4294967295 for 32bit timers. 
+timer_period = 65535 # Max: 65535 for 16bit timers, and 4294967295 for 32bit timers. 
 
 # The Calculation
 def calculate_timer_frequency(clock_frequency, prescaler, period):
