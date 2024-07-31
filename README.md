@@ -14,3 +14,5 @@
 <br />
 <br />one instruction CPU sim
 <br />Introducing the One-Instruction CPU Simulator—a remarkable innovation that can accomplish everything a normal CPU can with just a single instruction: NAND. Despite its seemingly limited instruction set, this simulator defies expectations by leveraging the NAND gate to perform a wide range of tasks, replicating the functionality of CPUs with tens or even thousands of instructions.
+<br />
+<br /> Trace Resistance Calculator v1.0.py -  Simple PCB Trace Resistance Calculator
